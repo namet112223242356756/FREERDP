@@ -5,8 +5,8 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows-11
-    timeout-Hours: 999
+    runs-on: windows- latest
+    timeout-minutes: 9999999999
 
     steps:
     - name: Mendownload Ngrok.
@@ -37,7 +37,7 @@ jobs:
         copy "Visual Studio 2019.lnk" "C:\Users\Public\Desktop\Visual Studio 2019.lnk"
     - name: Membuat Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp --region ap 3389"'
-    - name: Connect Ke RDP Kamu CPU 8 Core - 16GB Ram - 500 SSD.
+    - name: Connect Ke RDP Kamu CPU 8 Core - 16GB Ram - 250 SSD.
       run: cmd /c start.bat
     - name: Berhasil Dibuat! Anda Bisa Menutup Tab Sekarang.
       run: cmd /c loop.bat
