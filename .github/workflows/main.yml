@@ -5,9 +5,8 @@ on: workflow_dispatch
 jobs:
   build:
 
-    runs-on: windows- latest
-    timeout-minutes: 9999999999
-
+    runs-on: windows- 10
+    timeout-minutes: 999999
     steps:
     - name: Mendownload Ngrok.
       run: |
